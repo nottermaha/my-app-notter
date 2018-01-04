@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      My From NOTTER
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <form (ngSubmit)="submit()">
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Name</ion-label>
+      <ion-input type="text" name="name"[(ngModel)]="param.name"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label fixed>Surname</ion-label>
+      <ion-input type="text" name="surname"[(ngModel)]="param.surname"></ion-input>
+    </ion-item>
+    <button type="submit" ion-button full color="secondary" >บันทึก</button>
+  </ion-list>
+</form>
+</ion-content>
